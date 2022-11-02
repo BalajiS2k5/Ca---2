@@ -1,0 +1,45 @@
+body {
+    background: url(../assets/index2bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+
+h2 {
+    font-size: 5em;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 1s linear infinite;
+    
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+                #008000, red);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+                yellow, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+
+
+#options{
+
+    display: flex;
+justify-content: space-around  ;
+}
+
+
+#adresser{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+}
