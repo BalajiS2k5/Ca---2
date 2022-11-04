@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose What You Want</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<audio src="../assets/page2bgm.mp3" autoplay loop></audio>
+
+
+    <!-- <img src="../assets/timerlogo.jpg" alt="timerlogo" width="20" height="20"> -->
+<div class="allign-to-left">
+<div id="addresser"> Text Box to Display Name</div>    
+</div>
+
+<script>
+    let useridp= localStorage.getItem("userid")  
+console.log(useridp)
+    var addresser=document.getElementById("addresser").innerHTML = useridp;
+   
+
+</script>
+<h2>
+    <p>Pick To Play</p>
+</h2>
+
+<div class="options" id="options">
+   <div class="optionstoselect">
+    <p>
+   <div id="optionbox"> <a href="../page 3/syn.html"> Synonyms</a> </div>
+    <br><br><br>
+    <div id="optionbox"> <a href="../page 3/ant.html"> Antonyms</a></div>
+     <br><br><br>
+     <div id="optionbox"> <a href="../page 3/mean.html">Meanings </a></div>
+    </p>
+</div>
+<!-- 
+<a href="../page 3/syn.html"><img src="../assets/synonymspic.png" alt="synonyms" width="150" height="100"></a>
+
+<a href="../page 3/ant.html"><img src="../assets/antonymspic.png" alt="antonyms" width="150" height="100"></a>
+
+<a href="../page 3/mean.html"><img src="../assets/meaningspic.png" alt="meanings" width="150" height="100"></a> -->
+
+
+
+</div>
+    
+</body>
+</html>

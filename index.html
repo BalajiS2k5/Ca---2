@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The English Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+    
+  <body>
+    <div class="logo" id="logo">
+    <h1>   Welcome To
+      <br> The English Game</h1>
+      <!-- <img id="logo" src="../assets/welcome .png" alt="logo" />  welcomelogo(to be centered) -->
+    
+</div>
+   <div class="yourdetails">
+       
+     <!-- <img id="yourdetails" src="../assets/detail-collector.png" alt="yourdetails">  yourdetails(to be alligned Mid left) -->
+     <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"> <br>
+      <input type="text" name="text" id="text-field" class="login-form-field" placeholder="Nick-Name">
+    </form>
+
+
+
+   </div>
+
+   <br>
+
+<div id="start_btn" class="start_btn">
+  <!-- <img src="../assets/start button.png" alt="start"> -->
+<!-- quiz button -->
+
+<div class="start_btn"><button onclick="nicknameshow()"><a href="./page 2/index2.html">Click Here To Play</a></button></div>
+
+<audio src="./assets/index1music.mp3" autoplay loop></audio>
+</div>
+
+
+
+   <div>
+
+   <h2>Instructions To Play</h2>
+   
+<!-- instructions to follow (description)-->
+
+<div class="info_list">
+
+  
+ <div class="info"> 1. This game requires you to know simple English</div>
+ <div class="info"> 2. You're not allowed to search in google</div>
+ <div class="info"> 3. Once an option is selected, Its finalised. No changes can be made further</div>
+ <div class="info"> 4. There's a small timer for each question and should be answered within the timeframe else your game is over</div>
+ <div class="info"> 5. Once your done with all questions your score is displayed</div>
+ <div class="info"> 6. All questions are compulsory(No skipping)</div>
+  
+
+</div>
+</div>
+
+    <script >
+     // document.getElementById('username-field')=username-field
+     // document.getElementById('text-field')=text-field
+     // console.log("Test-Name")s
+     // localStorage.setItem('Name', 'username');
+
+function nicknameshow() { 
+    var username=document.getElementById("username-field").value;
+    var nickname=document.getElementById("text-field").value;
+    
+    alert("Hi " + nickname + "!!! Welcome to the game." + " wish you the best luck 😈😈😈") 
+    
+    var user = localStorage.setItem('userid', username);
+    var userNickname = localStorage.setItem('usernickname', nickname)
+}
+    </script>
+  </body>
+</html>

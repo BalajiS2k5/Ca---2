@@ -1,0 +1,95 @@
+
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+
+   
+
+
+body {
+    background: url(./assets/newindex1.jpg) no-repeat;
+    background-size: cover;
+    
+}
+
+#info{
+    align-self: center;
+    font-style: italic;
+    color: maroon;
+}
+
+
+#logo{
+    position: relative;
+    display: grid;
+align-self: center;
+justify-content: center;
+gap: 1px 1px;
+
+
+}
+h1 {
+    font-size: 5em;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 1s linear infinite;
+    
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+                #171dbb, red);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+                rgb(37, 195, 89), #24b3da);
+        -webkit-background-clip: text;
+    }
+}
+
+
+
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .login-form-field::placeholder {
+    color: #3a3a3a;
+  }
+  
+  .login-form-field {
+    border: 1px;
+    border-bottom: 6px solid #3a3a3a;
+    margin-bottom: 6x;
+    border-radius: 5px;
+    outline: none;
+    padding: 1px 1px 5px 5px;
+  }
+  
+  
+  #start_btn {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+
+
+  .info_list{
+     font-size: 1.3rem;
+     text-align: center;
+    color: antiquewhite;}
+
+    h2{ color: rgb(164, 22, 88);
+        font-size: 1.3rem;
+        text-align: center;}
